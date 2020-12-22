@@ -1,3 +1,12 @@
+function cancelar(){
+    document.getElementById('ingrese-nombres').value = "";
+    document.getElementById('ingrese-apellidos').value = "";
+    document.getElementById('ingrese-dni').value = "";
+    document.getElementById('ingrese-jefe').value = "";
+    document.getElementById('ingrese-destino').value = "";
+    document.getElementById('ingrese-fundamento').value = "";
+}
+
 function valida(f) {
     var ok = true;
     var msg = ""; 
@@ -45,3 +54,5 @@ function valida(f) {
         });
     }, false);
 })()
+
+document.getElementById('cancelar').addEventListener('click', cancelar)
